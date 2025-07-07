@@ -17,7 +17,7 @@ const Detailed = () => {
         // Fetch appointment details by ID
         const fetchAppointment = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/api/v1/Org_appointments/${id}`, {
+                const response = await fetch(`https://wzsit-backend.up.railway.app/api/v1/Org_appointments/${id}`, {
                     headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
                 });
                 if (!response.ok) {
@@ -66,7 +66,7 @@ const Detailed = () => {
         if (feedback) formData.append('feedback', feedback);
 
         try {
-            await fetch(`http://localhost:5000/api/v1/Org_appointments/${id}`, {
+            await fetch(`https://wzsit-backend.up.railway.app/api/v1/Org_appointments/${id}`, {
                 method: 'PUT',
                 headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
                 body: formData,
