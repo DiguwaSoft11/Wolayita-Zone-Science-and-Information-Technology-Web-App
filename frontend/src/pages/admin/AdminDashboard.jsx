@@ -17,7 +17,7 @@ const AdminDashboard = () => {
 
     const fetchAppointments = async () => {
         try {
-            const response = await fetch('http://localhost:5000/api/v1/Org_appointments', { 
+            const response = await fetch('https://wzsit-backend.up.railway.app/api/v1/Org_appointments', { 
                 headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
             });
             const data = await response.json();
