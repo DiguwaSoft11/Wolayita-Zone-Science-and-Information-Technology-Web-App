@@ -24,8 +24,8 @@ const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
     origin: [
-      "http://localhost:5000",
-      "http://localhost",
+      "https://wzsit-backend.up.railway.app",
+      "https://wolaita-sit.up.railway.app",
       //"https://wsit.up.railway.app",
       //"https://wst-webapp-production.up.railway.app",
     ],
@@ -62,8 +62,8 @@ io.on("connection", (socket) => {
 // Dynamic CORS configuration for API routes
 app.use((req, res, next) => {
   const allowedOrigins = [
-    "http://localhost:5000",
-    "http://localhost",
+      "https://wzsit-backend.up.railway.app",
+      "https://wolaita-sit.up.railway.app",
     //"https://wsit.up.railway.app",
     //"https://wst-webapp-production.up.railway.app",
   ];
