@@ -5,7 +5,7 @@ import io from "socket.io-client";
 import { FaPhoneAlt, FaClipboard } from "react-icons/fa";
 
 // Use your deployed backend URL or local development URL
-const socket = io.connect('http://localhost:5000');  // Change this to your deployed backend URL when needed
+const socket = io.connect('https://wzsit-backend.up.railway.app');  // Change this to your deployed backend URL when needed
 
 function VidChat() {
   const [me, setMe] = useState("");
@@ -263,7 +263,7 @@ import TextField from "@mui/material/TextField";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import PhoneIcon from "@mui/icons-material/Phone";
 
-// const socket = io.connect('wst-webapp-production.up.railway.app');  // Use your deployed backend URL
+// const socket = io.connect('https://wzsit-backend.up.railway.app');  // Use your deployed backend URL
 const socket = io.connect('http://localhost:5000');  // Use local backend URL for development
 
 function VidChat() {
