@@ -176,7 +176,7 @@ const Contact = () => {
     if (additionalFile) formData.append('additionalFile', additionalFile);
 
     try {
-      const response = await fetch('http://localhost:5000/api/v1/contact', {
+      const response = await fetch('https://wzsit-backend.up.railway.app/api/v1/contact', {
         method: 'POST',
         body: formData,
       });
